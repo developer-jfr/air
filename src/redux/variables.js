@@ -1,0 +1,3 @@
+export const MAP_VARIABLES = {
+GET_AIRPORT : 'APP/AIRPORT/GET_AIRPORT'
+}

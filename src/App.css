@@ -1,0 +1,393 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+.container
+{
+    position: relative;
+    width: 880px;
+    height: 500px;
+    background:  #222;
+}
+.container .clip
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition:  0.5s;
+}
+.container .clip.clip1
+{
+    background: url(./images/amazon.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 55% 0, 20% 100%, 0 100%);
+}
+.container .clip.clip2
+{
+    background: url(./images//netflix.jpg);
+    background-size: cover;
+    clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+
+}
+.container .clip.clip3 
+{
+    background: url(./images/soc.jpg);
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+}
+.container:hover .clip
+{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+
+}
+.container .clip:hover
+{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+
+.container .clip .content
+{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width:  70%;
+    padding: 20px;
+    background: #fff;
+    opacity: 0;
+    transition:  0.5s;
+    border-radius: 15px 20px 20px 10px;
+    color: rgb(26, 56, 56);
+}
+
+.container .clip:hover {
+
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+}
+
+.container .clip:hover .content
+{
+    bottom: 0;
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 430px) {
+    .container {
+    max-width: 300px;
+    max-height: 200px;
+    }
+   }
+   
+@media screen and (max-width: 880px) {
+    .container {
+     width: 750px;
+     height: 400px;
+    }
+   }
+@media screen and (max-width: 768px) {
+ .container {
+  width: 450px;
+  height: 300px;
+ }
+}
+.two 
+{
+    display: none;
+}
+
+.containerSecond h1
+{
+    
+    padding-bottom: 20px;
+}
+
+.containerThird h1
+{
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+.containerSecond {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    width: 100%;
+    height: 800px;
+    
+    @media screen and (max-width: 768px) {
+      height: 1600px
+      
+    }
+    @media screen and (max-width: 480px) {
+      height: 1600px
+    }
+}
+
+.second
+{
+    width: 800px;
+}
+
+.containerOne
+{
+    position: relative;
+    width: 880px;
+    height: 500px;
+    background:  #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerOne .clip11
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition:  0.5s;
+}
+.containerOne .clip11.clipOne
+{
+    background: url(./images/shopOne.png);
+    background-size: cover;
+    clip-path: polygon(0 0, 55% 0, 20% 100%, 0 100%);
+}
+.containerOne .clip11.clipTwo
+{
+    background: url(./images/shop.png);
+    background-size: cover;
+    clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+
+}
+.containerOne .clip11.clipThree
+{
+    background: url(./images/book.png);
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+}
+.containerOne:hover .clip11
+{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+
+}
+.containerOne .clip11:hover
+{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+
+.containerOne .clip11 .contentOne
+{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width:  70%;
+    padding: 20px;
+    background: #fff;
+    opacity: 0;
+    transition:  0.5s;
+    border-radius: 15px 20px 20px 10px;
+    color: rgb(26, 56, 56);
+}
+
+.containerOne .clip11:hover {
+
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+}
+
+.containerOne .clip11:hover .contentOne
+{
+    bottom: 0;
+    opacity: 1;
+}
+
+@media screen and (max-width: 430px) {
+    .containerOne {
+    max-width: 300px;
+    max-height: 200px;
+    }
+   }
+@media screen and (max-width: 880px) {
+    .containerOne {
+     width: 750px;
+     height: 400px;
+    }
+   }
+@media screen and (max-width: 768px) {
+ .containerOne {
+  width: 450px;
+  height: 300px;
+ }
+}
+
+
+
+
+
+
+
+
+
+.containerThird
+{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    width: 100%;
+    height: 800px;
+    
+    @media screen and (max-width: 768px) {
+      height: 1600px
+      
+    }
+    @media screen and (max-width: 480px) {
+      height: 1600px
+    }
+    
+}
+.containerTwo
+{
+    position: relative;
+    width: 880px;
+    height: 500px;
+    background:  #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerTwo .clipUn
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition:  0.5s;
+}
+.containerTwo .clipUn.clipFirst
+{
+    background: url(./images/beach.png);
+    background-size: cover;
+    clip-path: polygon(0 0, 55% 0, 20% 100%, 0 100%);
+}
+.containerTwo .clipUn.clipSecond
+{
+    background: url(./images/bora.png);
+    background-size: cover;
+    clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+
+}
+.containerTwo .clipUn.clipThird
+{
+    background: url(./images/food.png);
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+}
+.containerTwo:hover .clipUn
+{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+
+}
+.containerTwo .clipUn:hover
+{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+
+.containerTwo .clipUn .contentTwo
+{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width:  70%;
+    padding: 20px;
+    background: #fff;
+    opacity: 0;
+    transition:  0.5s;
+    border-radius: 15px 20px 20px 10px;
+    color: rgb(26, 56, 56);
+}
+
+.containerTwo .clipUn:hover {
+
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+}
+
+.containerTwo .clipUn:hover .contentTwo
+{
+    bottom: 0;
+    opacity: 1;
+}
+@media screen and (max-width: 880px) {
+    .containerTwo {
+     width: 750px;
+     height: 400px;
+    }
+   }
+@media screen and (max-width: 768px) {
+ .containerTwo {
+  width: 450px;
+  height: 300px;
+ }
+}
+@media screen and (max-width: 430px) {
+    .containerTwo {
+    max-width: 300px;
+    max-height: 200px;
+    }
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
